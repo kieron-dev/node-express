@@ -1,0 +1,15 @@
+id: d1d7c265-1311-4894-8cb1-5628e6c861b3
+timestamp: 2023-05-09T10:19:49Z
+username: guest
+source: TAP-GUI
+accelerator:
+  name: node-express
+  source:
+    image: registry.tanzu.vmware.com/tanzu-application-platform/tap-packages@sha256:e8e5c0e034e85b11b58b0b41bb3bed4eadaa2ebea529a4b9e0116145b00bac86
+fragments:
+  - name: tap-workload
+    source:
+      image: registry.tanzu.vmware.com/tanzu-application-platform/tap-packages@sha256:dbf0dedb6848ad8a7704c1c19465a1ddae9039b0e63c1dd0df3e2ed9cbda6093
+options:
+  includeTap: true
+  projectName: node-express
